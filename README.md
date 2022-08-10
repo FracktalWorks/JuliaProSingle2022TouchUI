@@ -1,6 +1,6 @@
  Julia TouchUI
 ==================
-Touch UI for Julia Extended 2022 based on `Python3` and  `PyQt5`
+Touch UI for Julia Pro Single 2022 based on `Python3` and  `PyQt5`
 
 ## Development Requiements:
 see https://github.com/FracktalWorks/Julia-Touch-UI-Documentation
