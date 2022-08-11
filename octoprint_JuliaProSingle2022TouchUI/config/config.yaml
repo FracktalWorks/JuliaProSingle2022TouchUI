@@ -10,7 +10,7 @@ api:
   allowCrossOrigin: true
   key: B508534ED20348F090B4D0AD637D3660
 appearance:
-  name: Julia Extended
+  name: Julia Pro Single 2022
 plugins:
   Julia2018FilamentSensor:
     _config_version: 2
@@ -94,15 +94,15 @@ printerProfiles:
       sharedNozzle: false
     heatedBed: true
     id: _default
-    model: Fracktal Works Julia Series
-    name: Julia Extended
+    model: Fracktal Works Julia Pro Series
+    name: Julia Pro Single 
     volume:
       custom_box: false
-      depth: 250.0
+      depth: 400
       formFactor: rectangular
-      height: 300.0
+      height: 400.0
       origin: lowerleft
-      width: 250.0
+      width: 400.0
 serial:
   blacklistedPorts:
   - /dev/ttyS*
