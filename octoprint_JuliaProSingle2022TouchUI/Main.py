@@ -105,16 +105,9 @@ filaments = [
 
 filaments = OrderedDict(filaments)
 
-#calibrationPosition = {'X1': 202, 'Y1': 31,
-#                       'X2': 59, 'Y2': 31,
-#                       'X3': 131, 'Y3': 233
-#                       }
-#
-
-calibrationPosition = {'X1': 336, 'Y1': 33,
-                       'X2': 27, 'Y2': 33,
-                       'X3': 183, 'Y3': 343,
-                       'X4': 183, 'Y4': 33
+calibrationPosition = {'X1': 202, 'Y1': 31,
+                       'X2': 59, 'Y2': 31,
+                       'X3': 131, 'Y3': 233
                        }
 
 try:
@@ -504,8 +497,8 @@ class MainUiClass(QtWidgets.QMainWindow, mainGUI.Ui_MainWindow):
 
         # self.moveZPBabyStep.pressed.connect(lambda: octopiclient.gcode(command='SET_GCODE_OFFSET Z_ADJUST=0.025 MOVE=1'))
         # self.moveZMBabyStep.pressed.connect(lambda: octopiclient.gcode(command='SET_GCODE_OFFSET Z_ADJUST=-0.025 MOVE=1'))
-        self.moveZPBabyStep.pressed.connect(lambda: octopiclient.gcode(command='M290 Z0.05'))
-        self.moveZMBabyStep.pressed.connect(lambda: octopiclient.gcode(command='M290 Z-0.05'))
+        self.moveZPBabyStep.pressed.connect(lambda: octopiclient.gcode(command='M290 Z0.025'))
+        self.moveZMBabyStep.pressed.connect(lambda: octopiclient.gcode(command='M290 Z-0.025'))
 
 
         # ChangeFilament rutien

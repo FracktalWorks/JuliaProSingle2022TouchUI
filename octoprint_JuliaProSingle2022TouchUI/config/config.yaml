@@ -10,9 +10,7 @@ api:
   allowCrossOrigin: true
   key: B508534ED20348F090B4D0AD637D3660
 appearance:
-  name: Julia Pro Single
-feature:
-  sdSupport: false
+  name: Julia Extended
 plugins:
   Julia2018FilamentSensor:
     _config_version: 2
@@ -45,8 +43,6 @@ plugins:
     upnpUuid: 7d61cbb7-f5c7-4221-949c-fd27225bf68e
   errortracking:
     unique_id: 4b7b81dd-6112-41ad-ba35-510c25fcb168
-  firmware_check:
-    ignore_infos: true
   firmwareupdater:
     _config_version: 3
     _selected_profile: 0
@@ -99,14 +95,14 @@ printerProfiles:
     heatedBed: true
     id: _default
     model: Fracktal Works Julia Series
-    name: Julia Pro Single
+    name: Julia Extended
     volume:
       custom_box: false
-      depth: 400.0
+      depth: 250.0
       formFactor: rectangular
-      height: 400.0
+      height: 300.0
       origin: lowerleft
-      width: 400.0
+      width: 250.0
 serial:
   blacklistedPorts:
   - /dev/ttyS*
