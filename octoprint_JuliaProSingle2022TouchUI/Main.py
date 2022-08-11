@@ -90,26 +90,26 @@ ip = '0.0.0.0'
 apiKey = 'B508534ED20348F090B4D0AD637D3660'
 file_name = ''
 filaments = [
-                ("PLA", 200),
-                ("ABS", 220),
-                ("PETG", 230),
-                ("PVA", 220),
-                ("TPU", 230),
+                ("PLA", 220),
+                ("ABS", 240),
+                ("PETG", 240),
+                ("PVA", 230),
+                ("TPU", 240),
                 ("Nylon", 250),
-                ("PolyCarbonate", 275),
-                ("HIPS", 220),
-                ("WoodFill", 200),
-                ("CopperFill", 180),
-                ("Breakaway", 230)
+                ("PolyCarbonate", 265),
+                ("HIPS", 240),
+                ("WoodFill", 220),
+                ("CopperFill", 200),
+                ("Breakaway", 240)
 ]
 
 filaments = OrderedDict(filaments)
 
-calibrationPosition = {'X1': 202, 'Y1': 31,
-                       'X2': 59, 'Y2': 31,
-                       'X3': 131, 'Y3': 233
+calibrationPosition = {'X1': 336, 'Y1': 33,
+                       'X2': 27, 'Y2': 33,
+                       'X3': 183, 'Y3': 343,
+                       'X4': 183, 'Y4': 33
                        }
-
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
