@@ -2015,16 +2015,16 @@ class Ui_MainWindow(object):
         self.wifiSettingsDoneButton.raise_()
         self.hiddenCheckBox.raise_()
         self.stackedWidget.addWidget(self.wifiSettingsPage)
-        self.ethSettingsPage = QtWidgets.QWidget()
-        self.ethSettingsPage.setObjectName("ethSettingsPage")
-        self.ethSettingsDoneButton = QtWidgets.QPushButton(self.ethSettingsPage)
-        self.ethSettingsDoneButton.setGeometry(QtCore.QRect(0, 230, 251, 91))
+        self.staticIPSettingsPage = QtWidgets.QWidget()
+        self.staticIPSettingsPage.setObjectName("staticIPSettingsPage")
+        self.staticIPSettingsDoneButton = QtWidgets.QPushButton(self.staticIPSettingsPage)
+        self.staticIPSettingsDoneButton.setGeometry(QtCore.QRect(0, 230, 251, 91))
         font = QtGui.QFont()
         font.setFamily("Gotham")
         font.setPointSize(13)
-        self.ethSettingsDoneButton.setFont(font)
-        self.ethSettingsDoneButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethSettingsDoneButton.setStyleSheet("QPushButton {\n"
+        self.staticIPSettingsDoneButton.setFont(font)
+        self.staticIPSettingsDoneButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPSettingsDoneButton.setStyleSheet("QPushButton {\n"
 "     border: 1px solid rgb(87, 87, 87);\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
@@ -2047,16 +2047,16 @@ class Ui_MainWindow(object):
 "QPushButton:focus {\n"
 "    outline: none;\n"
 "}")
-        self.ethSettingsDoneButton.setIconSize(QtCore.QSize(40, 40))
-        self.ethSettingsDoneButton.setObjectName("ethSettingsDoneButton")
-        self.ethSettingsCancelButton = QtWidgets.QPushButton(self.ethSettingsPage)
-        self.ethSettingsCancelButton.setGeometry(QtCore.QRect(250, 230, 231, 91))
+        self.staticIPSettingsDoneButton.setIconSize(QtCore.QSize(40, 40))
+        self.staticIPSettingsDoneButton.setObjectName("staticIPSettingsDoneButton")
+        self.staticIPSettingsCancelButton = QtWidgets.QPushButton(self.staticIPSettingsPage)
+        self.staticIPSettingsCancelButton.setGeometry(QtCore.QRect(250, 230, 231, 91))
         font = QtGui.QFont()
         font.setFamily("Gotham")
         font.setPointSize(13)
-        self.ethSettingsCancelButton.setFont(font)
-        self.ethSettingsCancelButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethSettingsCancelButton.setStyleSheet("QPushButton {\n"
+        self.staticIPSettingsCancelButton.setFont(font)
+        self.staticIPSettingsCancelButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPSettingsCancelButton.setStyleSheet("QPushButton {\n"
 "     border: 1px solid rgb(87, 87, 87);\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
@@ -2079,74 +2079,45 @@ class Ui_MainWindow(object):
 "QPushButton:focus {\n"
 "    outline: none;\n"
 "}")
-        self.ethSettingsCancelButton.setIconSize(QtCore.QSize(40, 40))
-        self.ethSettingsCancelButton.setObjectName("ethSettingsCancelButton")
-        self.ethStaticCheckBox = QtWidgets.QCheckBox(self.ethSettingsPage)
-        self.ethStaticCheckBox.setGeometry(QtCore.QRect(10, 20, 161, 41))
-        font = QtGui.QFont()
-        font.setFamily("Gotham")
-        font.setPointSize(14)
-        self.ethStaticCheckBox.setFont(font)
-        self.ethStaticCheckBox.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethStaticCheckBox.setStyleSheet("QCheckBox {\n"
-"    color: rgb(255, 255, 255);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked {\n"
-"    image: url(./templates/img/check-box.png);\n"
-"}\n"
-"QCheckBox::indicator:unchecked {\n"
-"    image: url(./templates/img/blank-check-box.png);\n"
-"}\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.ethStaticCheckBox.setIconSize(QtCore.QSize(40, 40))
-        self.ethStaticCheckBox.setChecked(False)
-        self.ethStaticCheckBox.setObjectName("ethStaticCheckBox")
-        self.ethStaticSettings = QtWidgets.QWidget(self.ethSettingsPage)
+        self.staticIPSettingsCancelButton.setIconSize(QtCore.QSize(40, 40))
+        self.staticIPSettingsCancelButton.setObjectName("staticIPSettingsCancelButton")
+        self.ethStaticSettings = QtWidgets.QWidget(self.staticIPSettingsPage)
         self.ethStaticSettings.setEnabled(True)
         self.ethStaticSettings.setGeometry(QtCore.QRect(0, 70, 481, 151))
         self.ethStaticSettings.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
         self.ethStaticSettings.setObjectName("ethStaticSettings")
-        self.ethStaticIpLabel = QtWidgets.QLabel(self.ethStaticSettings)
-        self.ethStaticIpLabel.setGeometry(QtCore.QRect(10, 10, 110, 30))
+        self.staticIPLabel = QtWidgets.QLabel(self.ethStaticSettings)
+        self.staticIPLabel.setGeometry(QtCore.QRect(10, 10, 110, 30))
         font = QtGui.QFont()
         font.setFamily("MS Shell Dlg 2")
         font.setPointSize(11)
         font.setBold(False)
         font.setWeight(50)
-        self.ethStaticIpLabel.setFont(font)
-        self.ethStaticIpLabel.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethStaticIpLabel.setStyleSheet("color: rgb(255, 255, 255);")
-        self.ethStaticIpLabel.setObjectName("ethStaticIpLabel")
-        self.ethStaticGatewayLabel = QtWidgets.QLabel(self.ethStaticSettings)
-        self.ethStaticGatewayLabel.setGeometry(QtCore.QRect(10, 60, 110, 30))
+        self.staticIPLabel.setFont(font)
+        self.staticIPLabel.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.staticIPLabel.setObjectName("staticIPLabel")
+        self.staticIPGatewayLabel = QtWidgets.QLabel(self.ethStaticSettings)
+        self.staticIPGatewayLabel.setGeometry(QtCore.QRect(10, 60, 110, 30))
         font = QtGui.QFont()
         font.setFamily("MS Shell Dlg 2")
         font.setPointSize(11)
         font.setBold(False)
         font.setWeight(50)
-        self.ethStaticGatewayLabel.setFont(font)
-        self.ethStaticGatewayLabel.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethStaticGatewayLabel.setStyleSheet("color: rgb(255, 255, 255);")
-        self.ethStaticGatewayLabel.setObjectName("ethStaticGatewayLabel")
-        self.ethStaticGatewayKeyboardButton = QtWidgets.QPushButton(self.ethStaticSettings)
-        self.ethStaticGatewayKeyboardButton.setGeometry(QtCore.QRect(420, 60, 60, 30))
+        self.staticIPGatewayLabel.setFont(font)
+        self.staticIPGatewayLabel.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPGatewayLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.staticIPGatewayLabel.setObjectName("staticIPGatewayLabel")
+        self.staticIPGatewayKeyboardButton = QtWidgets.QPushButton(self.ethStaticSettings)
+        self.staticIPGatewayKeyboardButton.setGeometry(QtCore.QRect(420, 60, 60, 30))
         font = QtGui.QFont()
         font.setFamily("MS Shell Dlg 2")
         font.setPointSize(18)
         font.setBold(True)
         font.setWeight(75)
-        self.ethStaticGatewayKeyboardButton.setFont(font)
-        self.ethStaticGatewayKeyboardButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethStaticGatewayKeyboardButton.setStyleSheet("QPushButton {\n"
+        self.staticIPGatewayKeyboardButton.setFont(font)
+        self.staticIPGatewayKeyboardButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPGatewayKeyboardButton.setStyleSheet("QPushButton {\n"
 "     border: 1px solid rgb(0, 0, 0);\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
@@ -2169,20 +2140,20 @@ class Ui_MainWindow(object):
 "QPushButton:focus {\n"
 "    outline: none;\n"
 "}")
-        self.ethStaticGatewayKeyboardButton.setIconSize(QtCore.QSize(40, 40))
-        self.ethStaticGatewayKeyboardButton.setObjectName("ethStaticGatewayKeyboardButton")
-        self.ethStaticIpKeyboardButton = QtWidgets.QPushButton(self.ethStaticSettings)
-        self.ethStaticIpKeyboardButton.setEnabled(True)
-        self.ethStaticIpKeyboardButton.setGeometry(QtCore.QRect(420, 10, 60, 30))
+        self.staticIPGatewayKeyboardButton.setIconSize(QtCore.QSize(40, 40))
+        self.staticIPGatewayKeyboardButton.setObjectName("staticIPGatewayKeyboardButton")
+        self.staticIPKeyboardButton = QtWidgets.QPushButton(self.ethStaticSettings)
+        self.staticIPKeyboardButton.setEnabled(True)
+        self.staticIPKeyboardButton.setGeometry(QtCore.QRect(420, 10, 60, 30))
         font = QtGui.QFont()
         font.setFamily("MS Shell Dlg 2")
         font.setPointSize(18)
         font.setBold(True)
         font.setWeight(75)
-        self.ethStaticIpKeyboardButton.setFont(font)
-        self.ethStaticIpKeyboardButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.ethStaticIpKeyboardButton.setAutoFillBackground(False)
-        self.ethStaticIpKeyboardButton.setStyleSheet("QPushButton {\n"
+        self.staticIPKeyboardButton.setFont(font)
+        self.staticIPKeyboardButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPKeyboardButton.setAutoFillBackground(False)
+        self.staticIPKeyboardButton.setStyleSheet("QPushButton {\n"
 "     border: 1px solid rgb(0, 0, 0);\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
@@ -2205,9 +2176,215 @@ class Ui_MainWindow(object):
 "QPushButton:focus {\n"
 "    outline: none;\n"
 "}")
-        self.ethStaticIpKeyboardButton.setIconSize(QtCore.QSize(40, 40))
-        self.ethStaticIpKeyboardButton.setObjectName("ethStaticIpKeyboardButton")
-        self.stackedWidget.addWidget(self.ethSettingsPage)
+        self.staticIPKeyboardButton.setIconSize(QtCore.QSize(40, 40))
+        self.staticIPKeyboardButton.setObjectName("staticIPKeyboardButton")
+        self.staticIPNameServerKeyboardButton = QtWidgets.QPushButton(self.ethStaticSettings)
+        self.staticIPNameServerKeyboardButton.setGeometry(QtCore.QRect(420, 110, 60, 30))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.staticIPNameServerKeyboardButton.setFont(font)
+        self.staticIPNameServerKeyboardButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPNameServerKeyboardButton.setStyleSheet("QPushButton {\n"
+"     border: 1px solid rgb(0, 0, 0);\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"\n"
+"QPushButton:flat {\n"
+"    border: none; /* no border for a flat push button */\n"
+"}\n"
+"\n"
+"QPushButton:default {\n"
+"    border-color: navy; /* make the default button prominent */\n"
+"}\n"
+"\n"
+"QPushButton:focus {\n"
+"    outline: none;\n"
+"}")
+        self.staticIPNameServerKeyboardButton.setIconSize(QtCore.QSize(40, 40))
+        self.staticIPNameServerKeyboardButton.setObjectName("staticIPNameServerKeyboardButton")
+        self.staticIPNameServerLabel = QtWidgets.QLabel(self.ethStaticSettings)
+        self.staticIPNameServerLabel.setGeometry(QtCore.QRect(10, 110, 110, 30))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.staticIPNameServerLabel.setFont(font)
+        self.staticIPNameServerLabel.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPNameServerLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.staticIPNameServerLabel.setObjectName("staticIPNameServerLabel")
+        self.staticIPComboBox = QtWidgets.QComboBox(self.staticIPSettingsPage)
+        self.staticIPComboBox.setGeometry(QtCore.QRect(130, 10, 191, 51))
+        font = QtGui.QFont()
+        font.setFamily("Gotham")
+        font.setPointSize(20)
+        self.staticIPComboBox.setFont(font)
+        self.staticIPComboBox.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPComboBox.setStyleSheet(" QScrollBar:vertical {\n"
+"     border: 1px solid black;\n"
+"border-radius: 5px;\n"
+"    background-color: rgb(40,40,40);\n"
+"     width: 60px;\n"
+"     margin: 67px 0 67px 0;\n"
+" }\n"
+"\n"
+"/* Sets up the color and height of handle */\n"
+"QScrollBar::handle:vertical {\n"
+"border-radius: 5px;\n"
+"background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"min-height: 7px;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::add-line:vertical {\n"
+"     border: 1px solid black;\n"
+"background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"     height:65px;\n"
+"border-radius: 5px;\n"
+"     subcontrol-position: bottom;\n"
+"     subcontrol-origin: margin;\n"
+" }\n"
+"\n"
+" QScrollBar::sub-line:vertical {\n"
+"     border: 1px solid black;\n"
+"background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"     height: 65px;\n"
+"border-radius: 5px;\n"
+"     subcontrol-position: top;\n"
+"     subcontrol-origin: margin;\n"
+" }\n"
+"\n"
+"QScrollBar::up-arrow:vertical {\n"
+" image: url(./templates/img/arrows.png);\n"
+"    width: 40px;\n"
+"    height: 40px;\n"
+" padding: 5px;\n"
+" }\n"
+"QScrollBar::down-arrow:vertical {\n"
+" image: url(./templates/img/arrows-5.png);\n"
+"    width: 40px;\n"
+"    height: 40px;\n"
+" padding: 5px;\n"
+" }\n"
+"\n"
+"/* need this to get rid of crosshatching on scrollbar background */\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"QComboBox {\n"
+"border: 1px solid black;\n"
+"    padding: 0px 18px 0px 3px;\n"
+"    min-width: 6em;\n"
+"\n"
+"}\n"
+"\n"
+"QComboBox::item {\n"
+"    color: rgb(0, 0, 0);\n"
+"}\n"
+"\n"
+"QComboBox:editable {\n"
+"    background: white;\n"
+"}\n"
+"\n"
+"QComboBox:!editable, QComboBox::drop-down:editable {\n"
+"background: white;\n"
+"}\n"
+"\n"
+"/* QComboBox gets the \"on\" state when the popup is open */\n"
+"QComboBox:!editable:on, QComboBox::drop-down:editable:on {\n"
+"background: white;\n"
+"}\n"
+"\n"
+"\n"
+"QComboBox::drop-down {\n"
+"border-left: 1px solid black;\n"
+"border-right: 1px solid black;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    width: 60px;\n"
+"     height: 50px;\n"
+"\n"
+"}\n"
+"\n"
+"QComboBox::down-arrow {\n"
+"\n"
+"image: url(./templates/img/arrows-5.png);\n"
+"width: 30px;\n"
+"height: 30px;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QComboBox QAbstractItemView {\n"
+"    selection-background-color: rgb(40, 40, 40);\n"
+"    background: white;\n"
+"}")
+        self.staticIPComboBox.setEditable(False)
+        self.staticIPComboBox.setMaxVisibleItems(8)
+        self.staticIPComboBox.setIconSize(QtCore.QSize(30, 30))
+        self.staticIPComboBox.setObjectName("staticIPComboBox")
+        self.staticIPINterfaceLabel = QtWidgets.QLabel(self.staticIPSettingsPage)
+        self.staticIPINterfaceLabel.setGeometry(QtCore.QRect(10, 20, 110, 30))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setWeight(50)
+        self.staticIPINterfaceLabel.setFont(font)
+        self.staticIPINterfaceLabel.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.staticIPINterfaceLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.staticIPINterfaceLabel.setObjectName("staticIPINterfaceLabel")
+        self.deleteStaticIPSettingsButton = QtWidgets.QPushButton(self.staticIPSettingsPage)
+        self.deleteStaticIPSettingsButton.setEnabled(True)
+        self.deleteStaticIPSettingsButton.setGeometry(QtCore.QRect(399, -1, 81, 61))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.deleteStaticIPSettingsButton.setFont(font)
+        self.deleteStaticIPSettingsButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.deleteStaticIPSettingsButton.setAutoFillBackground(False)
+        self.deleteStaticIPSettingsButton.setStyleSheet("QPushButton {\n"
+"     border: 1px solid rgb(0, 0, 0);\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"\n"
+"QPushButton:flat {\n"
+"    border: none; /* no border for a flat push button */\n"
+"}\n"
+"\n"
+"QPushButton:default {\n"
+"    border-color: navy; /* make the default button prominent */\n"
+"}\n"
+"\n"
+"QPushButton:focus {\n"
+"    outline: none;\n"
+"}")
+        self.deleteStaticIPSettingsButton.setText("")
+        icon11 = QtGui.QIcon()
+        icon11.addPixmap(QtGui.QPixmap("templates/img/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.deleteStaticIPSettingsButton.setIcon(icon11)
+        self.deleteStaticIPSettingsButton.setIconSize(QtCore.QSize(40, 40))
+        self.deleteStaticIPSettingsButton.setObjectName("deleteStaticIPSettingsButton")
+        self.stackedWidget.addWidget(self.staticIPSettingsPage)
         self.networkSettingsPage = QtWidgets.QWidget()
         self.networkSettingsPage.setObjectName("networkSettingsPage")
         self.networkInfoButton = QtWidgets.QPushButton(self.networkSettingsPage)
@@ -2276,15 +2453,15 @@ class Ui_MainWindow(object):
 "}")
         self.configureWifiButton.setIconSize(QtCore.QSize(40, 40))
         self.configureWifiButton.setObjectName("configureWifiButton")
-        self.configureEthButton = QtWidgets.QPushButton(self.networkSettingsPage)
-        self.configureEthButton.setGeometry(QtCore.QRect(0, 140, 480, 70))
-        self.configureEthButton.setMinimumSize(QtCore.QSize(0, 70))
+        self.configureStaticIPButton = QtWidgets.QPushButton(self.networkSettingsPage)
+        self.configureStaticIPButton.setGeometry(QtCore.QRect(0, 140, 480, 70))
+        self.configureStaticIPButton.setMinimumSize(QtCore.QSize(0, 70))
         font = QtGui.QFont()
         font.setFamily("Gotham")
         font.setPointSize(13)
-        self.configureEthButton.setFont(font)
-        self.configureEthButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        self.configureEthButton.setStyleSheet("QPushButton {\n"
+        self.configureStaticIPButton.setFont(font)
+        self.configureStaticIPButton.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.configureStaticIPButton.setStyleSheet("QPushButton {\n"
 "     border: 1px solid rgb(87, 87, 87);\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0.188, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
@@ -2307,8 +2484,8 @@ class Ui_MainWindow(object):
 "QPushButton:focus {\n"
 "    outline: none;\n"
 "}")
-        self.configureEthButton.setIconSize(QtCore.QSize(40, 40))
-        self.configureEthButton.setObjectName("configureEthButton")
+        self.configureStaticIPButton.setIconSize(QtCore.QSize(40, 40))
+        self.configureStaticIPButton.setObjectName("configureStaticIPButton")
         self.networkSettingsBackButton = QtWidgets.QPushButton(self.networkSettingsPage)
         self.networkSettingsBackButton.setGeometry(QtCore.QRect(0, 250, 481, 71))
         self.networkSettingsBackButton.setMinimumSize(QtCore.QSize(0, 0))
@@ -2970,9 +3147,9 @@ class Ui_MainWindow(object):
 "QPushButton:default {\n"
 "    border-color: navy; /* make the default button prominent */\n"
 "}")
-        icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.QPixmap("templates/img/update-arrows.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.performUpdateButton.setIcon(icon11)
+        icon12 = QtGui.QIcon()
+        icon12.addPixmap(QtGui.QPixmap("templates/img/update-arrows.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.performUpdateButton.setIcon(icon12)
         self.performUpdateButton.setIconSize(QtCore.QSize(40, 40))
         self.performUpdateButton.setCheckable(False)
         self.performUpdateButton.setAutoDefault(False)
@@ -3224,9 +3401,9 @@ class Ui_MainWindow(object):
 "QToolButton:focus {\n"
 "    outline: none;\n"
 "}")
-        icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("templates/img/Nozzle Offset Icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.nozzleOffsetButton.setIcon(icon12)
+        icon13 = QtGui.QIcon()
+        icon13.addPixmap(QtGui.QPixmap("templates/img/Nozzle Offset Icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.nozzleOffsetButton.setIcon(icon13)
         self.nozzleOffsetButton.setIconSize(QtCore.QSize(70, 70))
         self.nozzleOffsetButton.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
         self.nozzleOffsetButton.setObjectName("nozzleOffsetButton")
@@ -3260,9 +3437,9 @@ class Ui_MainWindow(object):
 "QToolButton:focus {\n"
 "    outline: none;\n"
 "}")
-        icon13 = QtGui.QIcon()
-        icon13.addPixmap(QtGui.QPixmap("templates/img/magic-wand.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.calibrationWizardButton.setIcon(icon13)
+        icon14 = QtGui.QIcon()
+        icon14.addPixmap(QtGui.QPixmap("templates/img/magic-wand.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.calibrationWizardButton.setIcon(icon14)
         self.calibrationWizardButton.setIconSize(QtCore.QSize(60, 60))
         self.calibrationWizardButton.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
         self.calibrationWizardButton.setObjectName("calibrationWizardButton")
@@ -3296,9 +3473,9 @@ class Ui_MainWindow(object):
 "QPushButton:default {\n"
 "    border-color: navy; /* make the default button prominent */\n"
 "}")
-        icon14 = QtGui.QIcon()
-        icon14.addPixmap(QtGui.QPixmap("templates/img/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.fullCalibrationButton.setIcon(icon14)
+        icon15 = QtGui.QIcon()
+        icon15.addPixmap(QtGui.QPixmap("templates/img/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.fullCalibrationButton.setIcon(icon15)
         self.fullCalibrationButton.setIconSize(QtCore.QSize(15, 15))
         self.fullCalibrationButton.setCheckable(False)
         self.fullCalibrationButton.setAutoDefault(False)
@@ -3378,7 +3555,7 @@ class Ui_MainWindow(object):
 "QPushButton:default {\n"
 "    border-color: navy; /* make the default button prominent */\n"
 "}")
-        self.quickCalibrationButton.setIcon(icon14)
+        self.quickCalibrationButton.setIcon(icon15)
         self.quickCalibrationButton.setIconSize(QtCore.QSize(15, 15))
         self.quickCalibrationButton.setCheckable(False)
         self.quickCalibrationButton.setAutoDefault(False)
@@ -4071,9 +4248,9 @@ class Ui_MainWindow(object):
 "QPushButton:default {\n"
 "    border-color: navy; /* make the default button prominent */\n"
 "}")
-        icon15 = QtGui.QIcon()
-        icon15.addPixmap(QtGui.QPixmap("templates/img/usb.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.fromUsbButton.setIcon(icon15)
+        icon16 = QtGui.QIcon()
+        icon16.addPixmap(QtGui.QPixmap("templates/img/usb.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.fromUsbButton.setIcon(icon16)
         self.fromUsbButton.setIconSize(QtCore.QSize(40, 40))
         self.fromUsbButton.setObjectName("fromUsbButton")
         self.printFromLabel = QtWidgets.QLabel(self.printLocationPage)
@@ -4149,9 +4326,9 @@ class Ui_MainWindow(object):
 "QPushButton:default {\n"
 "    border-color: navy; /* make the default button prominent */\n"
 "}")
-        icon16 = QtGui.QIcon()
-        icon16.addPixmap(QtGui.QPixmap("templates/img/folder.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.fromLocalButton.setIcon(icon16)
+        icon17 = QtGui.QIcon()
+        icon17.addPixmap(QtGui.QPixmap("templates/img/folder.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.fromLocalButton.setIcon(icon17)
         self.fromLocalButton.setIconSize(QtCore.QSize(40, 40))
         self.fromLocalButton.setObjectName("fromLocalButton")
         self.stackedWidget.addWidget(self.printLocationPage)
@@ -4319,9 +4496,9 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.localStorageScrollDown.setText("")
-        icon17 = QtGui.QIcon()
-        icon17.addPixmap(QtGui.QPixmap("templates/img/arrows-5.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.localStorageScrollDown.setIcon(icon17)
+        icon18 = QtGui.QIcon()
+        icon18.addPixmap(QtGui.QPixmap("templates/img/arrows-5.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.localStorageScrollDown.setIcon(icon18)
         self.localStorageScrollDown.setIconSize(QtCore.QSize(40, 40))
         self.localStorageScrollDown.setCheckable(False)
         self.localStorageScrollDown.setAutoRepeat(True)
@@ -4362,9 +4539,9 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.localStorageScrollUp.setText("")
-        icon18 = QtGui.QIcon()
-        icon18.addPixmap(QtGui.QPixmap("templates/img/arrows.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.localStorageScrollUp.setIcon(icon18)
+        icon19 = QtGui.QIcon()
+        icon19.addPixmap(QtGui.QPixmap("templates/img/arrows.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.localStorageScrollUp.setIcon(icon19)
         self.localStorageScrollUp.setIconSize(QtCore.QSize(40, 40))
         self.localStorageScrollUp.setCheckable(False)
         self.localStorageScrollUp.setAutoRepeat(True)
@@ -4404,9 +4581,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.localStorageDeleteButton.setText("")
-        icon19 = QtGui.QIcon()
-        icon19.addPixmap(QtGui.QPixmap("templates/img/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.localStorageDeleteButton.setIcon(icon19)
+        self.localStorageDeleteButton.setIcon(icon11)
         self.localStorageDeleteButton.setIconSize(QtCore.QSize(50, 50))
         self.localStorageDeleteButton.setCheckable(False)
         self.localStorageDeleteButton.setAutoDefault(False)
@@ -4488,7 +4663,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.USBStorageScrollUp.setText("")
-        self.USBStorageScrollUp.setIcon(icon18)
+        self.USBStorageScrollUp.setIcon(icon19)
         self.USBStorageScrollUp.setIconSize(QtCore.QSize(40, 40))
         self.USBStorageScrollUp.setCheckable(False)
         self.USBStorageScrollUp.setAutoRepeat(True)
@@ -4607,7 +4782,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.USBStorageScrollDown.setText("")
-        self.USBStorageScrollDown.setIcon(icon17)
+        self.USBStorageScrollDown.setIcon(icon18)
         self.USBStorageScrollDown.setIconSize(QtCore.QSize(40, 40))
         self.USBStorageScrollDown.setCheckable(False)
         self.USBStorageScrollDown.setAutoRepeat(True)
@@ -5137,7 +5312,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.moveZMBabyStep.setText("")
-        self.moveZMBabyStep.setIcon(icon18)
+        self.moveZMBabyStep.setIcon(icon19)
         self.moveZMBabyStep.setIconSize(QtCore.QSize(40, 40))
         self.moveZMBabyStep.setCheckable(False)
         self.moveZMBabyStep.setAutoDefault(False)
@@ -5224,7 +5399,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.moveZPBabyStep.setText("")
-        self.moveZPBabyStep.setIcon(icon17)
+        self.moveZPBabyStep.setIcon(icon18)
         self.moveZPBabyStep.setIconSize(QtCore.QSize(40, 40))
         self.moveZPBabyStep.setCheckable(False)
         self.moveZPBabyStep.setAutoDefault(False)
@@ -5825,7 +6000,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.moveYPButton.setText("")
-        self.moveYPButton.setIcon(icon18)
+        self.moveYPButton.setIcon(icon19)
         self.moveYPButton.setIconSize(QtCore.QSize(40, 40))
         self.moveYPButton.setCheckable(False)
         self.moveYPButton.setAutoDefault(False)
@@ -5865,7 +6040,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.moveYMButton.setText("")
-        self.moveYMButton.setIcon(icon17)
+        self.moveYMButton.setIcon(icon18)
         self.moveYMButton.setIconSize(QtCore.QSize(40, 40))
         self.moveYMButton.setCheckable(False)
         self.moveYMButton.setAutoDefault(False)
@@ -6105,7 +6280,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.moveZMButton.setText("")
-        self.moveZMButton.setIcon(icon18)
+        self.moveZMButton.setIcon(icon19)
         self.moveZMButton.setIconSize(QtCore.QSize(40, 40))
         self.moveZMButton.setCheckable(False)
         self.moveZMButton.setAutoDefault(False)
@@ -6145,7 +6320,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.moveZPButton.setText("")
-        self.moveZPButton.setIcon(icon17)
+        self.moveZPButton.setIcon(icon18)
         self.moveZPButton.setIconSize(QtCore.QSize(40, 40))
         self.moveZPButton.setCheckable(False)
         self.moveZPButton.setAutoDefault(False)
@@ -6250,7 +6425,7 @@ class Ui_MainWindow(object):
 "    outline: none;\n"
 "}")
         self.extruderButton.setText("")
-        self.extruderButton.setIcon(icon14)
+        self.extruderButton.setIcon(icon15)
         self.extruderButton.setIconSize(QtCore.QSize(40, 40))
         self.extruderButton.setCheckable(False)
         self.extruderButton.setAutoDefault(False)
@@ -7111,16 +7286,18 @@ class Ui_MainWindow(object):
         self.wifiSettingsCancelButton.setText(_translate("MainWindow", "Cancel"))
         self.wifiSettingsSSIDKeyboardButton.setText(_translate("MainWindow", "..."))
         self.hiddenCheckBox.setText(_translate("MainWindow", "Hidden "))
-        self.ethSettingsDoneButton.setText(_translate("MainWindow", "Done"))
-        self.ethSettingsCancelButton.setText(_translate("MainWindow", "Cancel"))
-        self.ethStaticCheckBox.setText(_translate("MainWindow", "Static IP"))
-        self.ethStaticIpLabel.setText(_translate("MainWindow", "IP Address"))
-        self.ethStaticGatewayLabel.setText(_translate("MainWindow", "Gateway"))
-        self.ethStaticGatewayKeyboardButton.setText(_translate("MainWindow", "..."))
-        self.ethStaticIpKeyboardButton.setText(_translate("MainWindow", "..."))
+        self.staticIPSettingsDoneButton.setText(_translate("MainWindow", "Done"))
+        self.staticIPSettingsCancelButton.setText(_translate("MainWindow", "Cancel"))
+        self.staticIPLabel.setText(_translate("MainWindow", "IP Address"))
+        self.staticIPGatewayLabel.setText(_translate("MainWindow", "Gateway"))
+        self.staticIPGatewayKeyboardButton.setText(_translate("MainWindow", "..."))
+        self.staticIPKeyboardButton.setText(_translate("MainWindow", "..."))
+        self.staticIPNameServerKeyboardButton.setText(_translate("MainWindow", "..."))
+        self.staticIPNameServerLabel.setText(_translate("MainWindow", "Name Servers"))
+        self.staticIPINterfaceLabel.setText(_translate("MainWindow", "Interface"))
         self.networkInfoButton.setText(_translate("MainWindow", "Network Info"))
         self.configureWifiButton.setText(_translate("MainWindow", "Configure WiFi"))
-        self.configureEthButton.setText(_translate("MainWindow", "Configure Ethernet"))
+        self.configureStaticIPButton.setText(_translate("MainWindow", "Configure Static IP"))
         self.calibrateTouch.setText(_translate("MainWindow", "Calibrate Touch"))
         self.rotateDisplay.setText(_translate("MainWindow", "Rotate Display"))
         self.rotateDisplaySettingsDoneButton.setText(_translate("MainWindow", "Done"))
@@ -7165,10 +7342,10 @@ class Ui_MainWindow(object):
         self.quickStep2CancelButton.setText(_translate("MainWindow", "Cancel"))
         self.quickStep3CancelButton.setText(_translate("MainWindow", "Cancel"))
         self.quickStep3NextButton.setText(_translate("MainWindow", "Next"))
-        self.calibrateLabel_10.setText(_translate("MainWindow", "Tighten left leveling screw untill nozzle just touches bed."))
+        self.calibrateLabel_10.setText(_translate("MainWindow", "Tighten right leveling screw untill nozzle just touches bed."))
         self.quickStep4CancelButton.setText(_translate("MainWindow", "Cancel"))
         self.quickStep4NextButton.setText(_translate("MainWindow", "Next"))
-        self.calibrateLabel_12.setText(_translate("MainWindow", "Do the same for the right screw"))
+        self.calibrateLabel_12.setText(_translate("MainWindow", "Do the same for the left screw"))
         self.calibrateLabel_25.setText(_translate("MainWindow", "Now tighten the center back  screw"))
         self.quickStep5NextButton.setText(_translate("MainWindow", "Next"))
         self.quickStep5CancelButton.setText(_translate("MainWindow", "Cancel"))
